@@ -106,40 +106,130 @@
           <p class="eyebrow">Campanhas e ações</p>
           <h2>Escolha uma frente para apoiar.</h2>
         </div>
-        <div class="card-grid">
-          <article class="campaign-card">
-            <img
-              src="src/media/food.avif"
-              alt="Crianças sorrindo em atividade comunitária"
-            />
-            <div>
-              <span class="tag">Alimentos</span>
-              <h3>Cesta Solidária</h3>
-              <p>Arrecadação de alimentos não perecíveis para famílias em vulnerabilidade.</p>
+        <div class="campaign-gallery" data-gallery aria-label="Galeria de campanhas ativas">
+          <button
+            class="gallery-arrow gallery-arrow-prev"
+            type="button"
+            aria-label="Mostrar campanha anterior"
+            data-gallery-prev
+          >
+            <span aria-hidden="true">&#10094;</span>
+          </button>
+
+          <div class="gallery-viewport" data-gallery-viewport>
+            <div class="gallery-track" data-gallery-track>
+              <article class="campaign-card" data-gallery-slide data-expires-at="2026-07-20">
+                <img
+                  class="campaign-image"
+                  src="src/campaings/campanha-do-agasalho.jpg"
+                  alt="Campanha do agasalho com foco em doação de roupas e cobertores"
+                />
+                <div>
+                  <span class="tag">Inverno</span>
+                  <h3>Campanha do Agasalho</h3>
+                  <p>Arrecadação de roupas, cobertores e itens de inverno para famílias vulneráveis.</p>
+                </div>
+              </article>
+
+              <article class="campaign-card" data-gallery-slide data-expires-at="2026-06-26">
+                <img
+                  class="campaign-image"
+                  src="src/campaings/arraia-solidario.jpg"
+                  alt="Divulgação de arraia solidário para mobilização comunitária"
+                />
+                <div>
+                  <span class="tag">Evento</span>
+                  <h3>Arraiá Solidário</h3>
+                  <p>Evento beneficente com arrecadação de doações e apoio a ações sociais da comunidade.</p>
+                </div>
+              </article>
+
+              <article class="campaign-card" data-gallery-slide>
+                <img
+                  class="campaign-image"
+                  src="src/campaings/pet-de-todos.jpg"
+                  alt="Campanha voltada ao cuidado e apoio para animais"
+                />
+                <div>
+                  <span class="tag">Animais</span>
+                  <h3>Pet de Todos</h3>
+                  <p>Mobilização para arrecadar ração, acessórios e apoio a animais em situação de cuidado.</p>
+                </div>
+              </article>
+
+              <article class="campaign-card" data-gallery-slide>
+                <img
+                  class="campaign-image"
+                  src="src/campaings/helping-hands.avif"
+                  alt="Pessoa segurando caixa de doações"
+                />
+                <div>
+                  <span class="tag">Roupas e móveis</span>
+                  <h3>Casa com Cuidado</h3>
+                  <p>Recebimento de roupas limpas, cobertores, móveis e utensílios em bom estado.</p>
+                </div>
+              </article>
+
+              <article class="campaign-card" data-gallery-slide>
+                <img
+                  class="campaign-image"
+                  src="src/campaings/volunteer.avif"
+                  alt="Voluntários organizando doações em uma ação comunitária"
+                />
+                <div>
+                  <span class="tag">Voluntariado</span>
+                  <h3>Frente de Apoio</h3>
+                  <p>Inscrição de voluntários para ações presenciais, eventos solidários e atendimento.</p>
+                </div>
+              </article>
+
+              <article class="campaign-card" data-gallery-slide>
+                <img
+                  class="campaign-image"
+                  src="src/campaings/together.avif"
+                  alt="Mãos unidas em roda de voluntários"
+                />
+                <div>
+                  <span class="tag">Serviços</span>
+                  <h3>Tempo que Transforma</h3>
+                  <p>Apoio de voluntários em oficinas, feiras sociais, triagem e atendimento.</p>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="campaign-card">
-            <img
-              src="src/media/helping-hands.avif"
-              alt="Pessoa segurando caixa de doações"
-            />
-            <div>
-              <span class="tag">Roupas e móveis</span>
-              <h3>Casa com Cuidado</h3>
-              <p>Recebimento de roupas limpas, cobertores, móveis e utensílios em bom estado.</p>
-            </div>
-          </article>
-          <article class="campaign-card">
-            <img
-              src="src/media/together.avif"
-              alt="Mãos unidas em roda de voluntários"
-            />
-            <div>
-              <span class="tag">Serviços</span>
-              <h3>Tempo que Transforma</h3>
-              <p>Apoio de voluntários em oficinas, feiras sociais, triagem e atendimento.</p>
-            </div>
-          </article>
+          </div>
+
+          <button
+            class="gallery-arrow gallery-arrow-next"
+            type="button"
+            aria-label="Mostrar próxima campanha"
+            data-gallery-next
+          >
+            <span aria-hidden="true">&#10095;</span>
+          </button>
+        </div>
+
+        <p class="gallery-status" data-gallery-status aria-live="polite">
+          Deslize para o lado ou use as setas para navegar entre as campanhas ativas.
+        </p>
+
+        <div class="campaign-lightbox" data-lightbox hidden>
+          <div class="campaign-lightbox-backdrop" data-lightbox-close></div>
+          <div
+            class="campaign-lightbox-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Visualização ampliada da campanha"
+          >
+            <button
+              class="campaign-lightbox-close"
+              type="button"
+              aria-label="Fechar imagem ampliada"
+              data-lightbox-close
+            >
+              X
+            </button>
+            <img class="campaign-lightbox-image" data-lightbox-image src="" alt="" />
+          </div>
         </div>
       </section>
 
